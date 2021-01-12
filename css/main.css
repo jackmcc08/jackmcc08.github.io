@@ -1,17 +1,38 @@
+:root {
+  --green: #00FF00;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
 body {
-    margin: 60px auto;
-    width: 70%;
-    background-color: lightblue;
+  background: var(--bg);
+  margin: 60px auto;
+  width: 70%;
 }
 
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-size: 3em;
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+ul {
+  font-family: helvetica;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
 }
 
 .btn {
