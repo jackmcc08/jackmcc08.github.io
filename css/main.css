@@ -15,7 +15,6 @@ body {
 }
 
 header {
-  display: block;
   height: 50px;
   background: var(--forest_green);
   color: var(--imperial_blue);
@@ -26,8 +25,30 @@ header {
   justify-content: space-between;
 }
 
-.page-header-title {
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 99%;
+}
 
+.sticky + main {
+  padding-top: 70px;
+}
+
+.page-header-title {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 875px) {
+  .page-header-title {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .page-header-title {
+    font-size: 1.25em;
+  }
 }
 
 .page-header-spacer-2 {
@@ -157,21 +178,41 @@ input:checked + .slider:before {
 }
 
 h1 {
-  font-size: 2em;
+
 }
 
 
 main {
-  padding: 10px 10px;
+  padding: 0px 0px;
 }
 
 .main-content-div {
-  padding: 0px 10px;
+  padding: 0px 20px;
   width: 70%;
 }
 
+@media only screen and (max-width: 800px) {
+  .main-content-div {
+    padding: 0px 20px;
+    width: 90%;
+  }
+
+}
+
 h3 {
-  font-size: 1.5em;
+
+}
+
+.page-sub-header {
+  font-size: 1.25em;
+  background: ;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.page-sub-sections {
+  margin-top: 0px;
+  padding-top: 5px;
 }
 
 p {
@@ -179,8 +220,13 @@ p {
   line-height: 1.25em;
 }
 
-ul {
+#about-me-text {
+  text-align: justify;
 
+}
+
+ul {
+  background: ;
 }
 
 li {
@@ -194,13 +240,60 @@ li {
 }
 
 footer {
+    height: 50px;
     background: var(--forest_green);
     color: var(--imperial_blue);
-    padding: 10px 10px;
-    align-items: center;
+    padding: 0px 10px;
 }
 
-.footer_text {
-  font-size: 1.25em;
-  line-height: 1em;
+.footer-content {
+  background: ;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content-text {
+  height: 50px;
+  background: ;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start ;
+}
+
+.footer-text {
+  font-size: 1em;
+  background: ;
+  margin: 0;
+  padding: 0;
+}
+
+.back-to-top {
+  height: 50px;
+  background: ;
+  align-content: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-to-top-btn {
+  font: roboto;
+  height: 30px;
+  width: auto;
+  border-style: solid;
+  border-radius: 5px;
+  border: 10px black;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  text-align: center;
+}
+
+#back-to-top-btn:hover {
+  background: white;
+  color: var(--imperial_blue);
 }

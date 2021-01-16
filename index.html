@@ -11,11 +11,11 @@
 
 
   <body class="light-theme">
-    <header class="header">
+    <header class="header" id="the-header">
       <h1 class="page-header-title">Jack McCarthy | Student Developer | Home</h1>
       <div class="page-header-spacer-2">
         <div class="page-header-linkedin">
-          <a href="https://www.linkedin.com/in/jackmcc08/" class="linkedin_profile"><img src="resources/LI-In-Bug.png" id="linkedin_logo"></a>
+          <a href="https://www.linkedin.com/in/jackmcc08/" target="_blank" class="linkedin_profile"><img src="resources/LI-In-Bug.png" id="linkedin_logo"></a>
         </div>
         <div class="page-header-dark-mode-switch">
           <label class="switch">
@@ -32,14 +32,14 @@
     <main>
       <div class="main-content-div">
         <h3 class="page-sub-header">About Me</h3>
-        <p>Hi! My name is Jack McCarthy and I am currently multiclassing into a programmer. After 8 years in the energy industry negotiating goods and services contracts across a wide range of areas, I am now looking to put my time and effort into creating programs which are fun and and easy to use.</p>
+        <p class="page-sub-sections" id="about-me-text">Hi! My name is Jack McCarthy and I am currently multiclassing into a programmer. After 8 years in the energy industry negotiating goods and services contracts across a wide range of areas, I am now looking to put my time and effort into creating programs which are fun and and easy to use.</p>
 
-        <p>I am currently studying the languages below.</p>
+        <p class="page-sub-sections" id="about-me-text">I am currently studying the programming languages and tech stacks below.</p>
 
-        <p>If you want to learn together or collaborate on a project please reach out to me.</p>
+        <p class="page-sub-sections" id="about-me-text">If you want to learn together or collaborate on a project please reach out to me.</p>
 
         <h3 class="page-sub-header">Programming Languages and Tech Stacks</h3>
-        <ul>
+        <ul class="page-sub-sections">
           <li class="list">HTML5</li>
           <li class="list">CSS</li>
           <li class="list">Javascript</li>
@@ -47,13 +47,13 @@
         </ul>
 
         <h3 class="page-sub-header">Portfolio</h3>
-        <ul>
+        <ul class="page-sub-sections">
           <li class="list">This Website | <a href="https://github.com/jackmcc08/jackmcc08.github.io">Github Repository</a></li>
           <li class="list">Project 2</li>
         </ul>
 
         <h3 class="page-sub-header">Links</h3>
-        <ul>
+        <ul class="page-sub-sections">
           <li class="list"><a href="pages/blog.html">Blog</a> | Under Construction</li>
           <li class="list"><a href="https://github.com/jackmcc08">Github profile</a></li>
           <li class="list"><a href="https://stackoverflow.com/users/14058430/jackmcc">Stack Overflow profile</a></li>
@@ -61,7 +61,7 @@
         </ul>
 
         <h3 class="page-sub-header">Current Tasks</h3>
-        <ul>
+        <ul class="page-sub-sections">
           <li class="list">Design website structure</li>
           <li class="list">Dev HTML layout</li>
           <li class="list">Dev CSS layout</li>
@@ -75,9 +75,15 @@
     </main>
 
     <footer>
-      <p class="footer_text">Website created by Jack McCarthy (c)2021</p>
-      <p class="footer_text">Hosted on Github pages</p>
-
+      <div class="footer-content">
+        <div class="footer-content-text">
+          <p class="footer-text">Website created by Jack McCarthy (c)2021</p>
+          <p class="footer-text">Hosted on Github pages</p>
+        </div>
+        <div class="back-to-top">
+          <button onclick="topFunction()" id="back-to-top-btn" title="Go to top">Top</button>
+        </div>
+      </div>
 
 
       <!-- Javascript section -->
