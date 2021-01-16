@@ -28,7 +28,12 @@ header {
 .sticky{
   position: fixed;
   top: 0;
+  padding: 10px 10px;
   width: 99%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .sticky + main {
@@ -83,6 +88,7 @@ header {
   display: inline-block;
   width: 60px;
   height: 30px;
+  background: ;
 }
 
 /* Hide default HTML checkbox */
@@ -140,7 +146,45 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.moon {
+  position: absolute;
+  z-index: 2;
+  top: 6px;
+  left: 6px;
+  right: 0;
+  bottom: -6px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  box-shadow: inset 5px -4px #777, inset 5px -4px 1px 1px #777;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*
+.moon:before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  box-shadow: inset 5px -4px #FFFF00, inset 5px -4px 1px 1px #FFFF00;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateX(29.5px);
+  -ms-transform: translateX(29.5px);
+  transform: translateX(29.5px);
+}
 
+input:checked + .moon:before {
+  border-radius: 50%;
+  box-shadow: inset 5px -4px #ccc, inset 5px -4px 1px 1px #ccc;
+}
+*/
 .light-theme {
   --bg: var(--cream);
   --fontColor: var(--imperial_blue);
