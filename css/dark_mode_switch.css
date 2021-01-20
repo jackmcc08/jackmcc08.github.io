@@ -119,3 +119,11 @@ input:checked + .moon:before {
   --btnBg: var(--imperial_blue);
   --btnFontColor: var(--cream);
 }
+
+.light-theme a {
+  color: purple;
+}
+
+.dark-theme a {
+  color: white;
+}
