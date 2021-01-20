@@ -121,7 +121,7 @@ input:checked + .moon:before {
 }
 
 .light-theme a {
-  color: purple;
+  color: blue;
 }
 
 .dark-theme a {
