@@ -39,12 +39,17 @@ switcher.addEventListener('click', function() {
 });
 
 //HOME BUTTON on footer - script to make go home
-document.getElementById("go-to-home-page").onclick = function () {
+function homeButton() {
     location.href = "../index.html";
 };
 
+//HOME BUTTON function for home page as has correct address
+function homeButtonAlt() {
+    location.href = "index.html";
+};
+
 //TOP OF PAGE BUTTON on footer - script to make go to top of page
-document.getElementById("go-to-top").onclick = function () {
+function topButton() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     document.body.scrollTop = 0; // For Safari
 };
