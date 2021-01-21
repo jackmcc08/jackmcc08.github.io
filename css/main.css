@@ -137,7 +137,14 @@ footer {
   padding: 0;
 }
 
-.back-to-top {
+.footer-content-buttons {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-top, .back-to-home {
   height: 50px;
   background: ;
   align-content: center;
@@ -145,9 +152,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-left: 10px;
 }
 
-#back-to-top-btn {
+.footer-button {
   font: roboto;
   height: 30px;
   width: auto;
@@ -159,7 +167,7 @@ footer {
   text-align: center;
 }
 
-#back-to-top-btn:hover {
+.footer-button:hover {
   background: white;
   color: var(--imperial_blue);
 }
@@ -225,8 +233,10 @@ li {
 
 }
 
+/* STATS_LINKS CSS RULES only*/
 .website-badge-container {
   margin-top: 15px;
+  margin-bottom: 15px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -278,4 +288,22 @@ li {
 #codewars img{
   background: #303133;
   width: 50%;
+}
+
+/*BLOG CSS RULES ONLY*/
+
+.blog-div {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.blog-post {
+  margin-bottom: 10px;
+  padding: 5px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid black;
+  border-radius: 15px;
 }
