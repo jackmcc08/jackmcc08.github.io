@@ -2,7 +2,7 @@
 'use strict'
 //STICKY HEADER
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickyHeader()};
 
 // Get the header
 var header = document.getElementById("the-header");
@@ -11,7 +11,7 @@ var header = document.getElementById("the-header");
 var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function stickyHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
@@ -37,3 +37,14 @@ switcher.addEventListener('click', function() {
     console.log('current class name: ' + className);
 
 });
+
+//HOME BUTTON on footer - script to make go home
+document.getElementById("go-to-home-page").onclick = function () {
+    location.href = "../index.html";
+};
+
+//TOP OF PAGE BUTTON on footer - script to make go to top of page
+document.getElementById("go-to-top").onclick = function () {
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // For Safari
+};
