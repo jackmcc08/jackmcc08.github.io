@@ -14,6 +14,11 @@ bundle exec jekyll post '<insert-post-name>'
 
 ```
 
+## Use Submodules
+
+- [Guide](https://github.blog/open-source/git/working-with-submodules/)
+- [CLI Guide](https://git-scm.com/docs/git-submodule)
+
 ## Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;

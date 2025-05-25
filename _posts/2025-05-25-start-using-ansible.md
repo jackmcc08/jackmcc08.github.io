@@ -8,6 +8,4 @@ tags: [Ansible, Azure, Automation]
 #  comments: true
 ---
 
-[my post](/assets/test.md)
-{% include test2.md %}
-
+This is my first post
