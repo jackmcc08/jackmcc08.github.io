@@ -4,20 +4,18 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-My name is Jack and I am a full-stack software developer and platform engineer at Avanade. 
+Welcome to Codex Blues, my personal tech blog. 
 
-This blog shares some of my technical learnings and interesting things I don't want to forget! 
+Software engineering is my second career and one of my favourite aspects of this world is the openness of the community, sharing knowledge, the open-source technology and how you can find and learn anything you want online. So this blog is my attempt to contribute back with some hopefully useful tutorials and interesting articles. 
 
-If you enjoy this blog, have any feedback or comments please reach out to me. 
+In my day to day I work as a platform / software engineer at Avanade. 
 
-<h3>🌱  Current Projects</h3>
-Currently working with Ansible and configuring Ubuntu Servers!
-
-Playing around with raspberry pi5!
-
-<h3>📫  Connect</h3>
-I am always interested to connect and collaborate on projects.
+If you enjoy this blog, have any feedback or comments please reach out to me.
 
 How to reach me: 
-- [LinkedIn](https://www.linkedin.com/in/jackmcc08/) 
 - Drop a comment on one of my posts
+- [LinkedIn](https://www.linkedin.com/in/jackmcc08/) 
+
+---
+
+This blog is hosted on [github](https://github.com/) and is based on the [Chirpy Jekyll theme](https://chirpy.cotes.page/posts/getting-started/). Host your own [github pages blog](https://pages.github.com/).

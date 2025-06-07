@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.3"
 gem 'jekyll-compose', group: [:jekyll_plugins]
+gem 'jekyll-gist'
+gem 'jemoji'
 
 gem "html-proofer", "~> 5.0", group: :test
 
