@@ -282,7 +282,7 @@ ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/mySecond
 
 ### __Step 8 - Cleanup__
 
-- Go and delete any VMs you created for the lesson - see lesson [1.4 Remove Azure VMs](../1_SetUp/1.4_Remove_Azure_VM/)
+- Go and delete any VMs you created for the lesson - see lesson [1.4 Remove Azure VMs]()
 - If you have exposed any VMs on the public internet, then consider removing the connection if it is no longer required.
 
 ### Useful links
