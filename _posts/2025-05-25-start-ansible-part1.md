@@ -33,7 +33,7 @@ You will learn:
 
 ## <u>Dependencies</u>
 - This tutorial assumes you have the following set up. 
-- You can follow the steps in this blog to help you get prepared. [Preparing for Ansible]()
+- You can follow the steps in this blog to help you get prepared. [Preparing for Ansible](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e)
 - You will need: 
     - A Control Host (must be linux) 
     - One or more Target Hosts (to follow this tutorial they must be linux)
@@ -282,7 +282,7 @@ ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/mySecond
 
 ### __Step 8 - Cleanup__
 
-- Go and delete any VMs you created for the lesson - see lesson [1.4 Remove Azure VMs]()
+- Go and delete any VMs you created for the lesson - see lesson [1.4 Remove Azure VMs](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e)
 - If you have exposed any VMs on the public internet, then consider removing the connection if it is no longer required.
 
 ### Useful links
