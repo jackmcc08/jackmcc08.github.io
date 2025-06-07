@@ -246,7 +246,7 @@ nano ~/intro-to-ansible/index.html.j2
 ```
 
 4. Populate the page with the below code, adding in your name:
-- [Index Page Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-index-html-j2)
+- [Index Page Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-index-index.htmlhtml-j2)
 
 ```html
 <!DOCTYPE html>
@@ -282,7 +282,7 @@ ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/mySecond
 
 ### __Step 8 - Cleanup__
 
-- Go and delete any VMs you created for the lesson - see lesson [1.4 Remove Azure VMs](../1_SetUp/1.4_Remove_Azure_VM/)
+- Go and delete any VMs you created for the lesson - see lesson [1.4 Remove Azure VMs]()
 - If you have exposed any VMs on the public internet, then consider removing the connection if it is no longer required.
 
 ### Useful links
