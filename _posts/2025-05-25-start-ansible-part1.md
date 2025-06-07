@@ -246,7 +246,7 @@ nano ~/intro-to-ansible/index.html.j2
 ```
 
 4. Populate the page with the below code, adding in your name:
-- [Index Page Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-index-index.htmlhtml-j2)
+- [Index Page Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-index-html-j2)
 
 ```html
 <!DOCTYPE html>
