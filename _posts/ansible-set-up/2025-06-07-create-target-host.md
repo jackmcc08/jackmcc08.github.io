@@ -18,7 +18,7 @@ This can be done in a variety of ways and I have included guidance on how to do 
 
 The Ansible Code will be run on your managed node and you will need a personal Azure Subscription with some credit in it. 
 
-> SAVE CREDITS: Destroy the VM using lesson [1.4](../1.4_Remove_Azure_VM/) as soon as possible to avoid incurring additional cost
+> SAVE CREDITS: Destroy the VM using [lesson 0.4]({% post_url /ansible-set-up/2025-06-07-destroy-target-host %}) as soon as possible after completing the tutorial to avoid incurring additional cost.
 {: .prompt-warning }
 
 > This tutorial is based on this [Microsoft Guide](https://learn.microsoft.com/en-us/azure/developer/ansible/vm-configure?tabs=ansible)
