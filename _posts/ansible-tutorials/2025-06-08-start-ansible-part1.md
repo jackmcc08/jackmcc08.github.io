@@ -7,9 +7,9 @@ categories: [Ansible]
 tags: [Ansible, Automation]  
 comments: true
 ---
-<!-- 
+
 {% include medium_xpost.md url="https://medium.com/@jackmcc08/ansible-part-1-introduction-to-ansible-407ed16ba276" %}
- -->
+
 
 ## <u>What is Ansible?</u>
 
