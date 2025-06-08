@@ -6,9 +6,9 @@ order: 4
 
 Welcome to Codex Blues, my personal tech blog. 
 
-Software engineering is my second career and one of my favourite aspects of this world is the openness of the community, sharing knowledge, the open-source technology and how you can find and learn anything you want online. So this blog is my attempt to contribute back with some hopefully useful tutorials and interesting articles. 
+Software engineering is my second career and one of my favourite aspects of this world is the openness of the community, the open-source technology and how you can find and learn anything you want online. So this blog is my attempt to contribute back with some hopefully useful tutorials and interesting articles. 
 
-In my day to day I work as a platform / software engineer at Avanade. 
+In my day to day I work as a platform & software engineer at Avanade. 
 
 If you enjoy this blog, have any feedback or comments please reach out to me.
 
