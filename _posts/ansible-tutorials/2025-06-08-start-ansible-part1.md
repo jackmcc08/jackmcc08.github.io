@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Introduction to Ansible - Part 1
+title: Ansible Part 1 - Introduction to Ansible
 description: Start using Ansible, the easy IT Automation Tool by Redhat
-date: 2025-05-25 14:00 +0100
+date: 2025-06-08 09:00 +0100
 categories: [Ansible]
-tags: [Ansible, Azure, Automation]  
+tags: [Ansible, Automation]  
 comments: true
 ---
-
+<!-- 
 {% include medium_xpost.md url="https://www.medium.com" %}
-
+ -->
 
 ## <u>What is Ansible?</u>
 
@@ -17,10 +17,10 @@ Ansible is an IT automation tool that allows you to use configuration as code to
 
 It is open-source, easy to use and made by [RedHat](https://www.redhat.com/en). 
 
-- [Offical Ansible Documentation](https://docs.ansible.com/)
+- [Official Ansible Documentation](https://docs.ansible.com/)
 
 
-## <u>What's included in this blog?</u>
+## <u>What's included in this tutorial?</u>
 
 In this walk through you will be introduced to the basic concepts of Ansible and run, not one, but two playbooks!
 
@@ -32,14 +32,12 @@ You will learn:
 
 
 ## <u>Dependencies</u>
-- This tutorial assumes you have the following set up. 
-- You can follow the steps in this blog to help you get prepared. [Preparing for Ansible](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e)
-- You will need: 
+- This tutorial assumes you have the following set up:
     - A Control Host (must be linux) 
     - One or more Target Hosts (to follow this tutorial they must be linux)
     - The Public IP Address of each Target Host (or a private connection)
     - The SSH key to access each Target Host
-
+- You can follow the steps in this blog to help you get prepared. [Preparing for Ansible]({% post_url /ansible-set-up/2025-06-07-prepare-ansible-part0 %})
 
 ## <u>Tutorial</u>
 
@@ -50,6 +48,9 @@ A basic Ansible playbook execution requires the following components:
 You can also run modules directly from the command line which can be useful for certain tasks.
 
 ### :rocket: __Step 1 - Set up inventory__
+
+> <strong>Inventories</strong> are used to define target machines. You can specify groups and names defined in inventories as targets in your playbooks.
+{: .prompt-tip }
 
 Create the below inventory file in your user directory
 
@@ -91,7 +92,10 @@ alternative_group:
 
 ### :rocket: __Step 2 - Test you can reach your your target hosts__
 
-First we are going to test you can ping your target host.
+First we are going to test you can ping your target host. We are going to do this by directly calling the ping module.
+
+> <strong>Modules</strong> are units of code that perform actions on the target machine. They can be used on the CLI or more typically in tasks.
+{: .prompt-tip }
 
 This command tests you can ping all hosts specified in the inventory file. 
 
@@ -110,6 +114,9 @@ ansible $HOST -m ping -i ~/intro-to-ansible/inventory.yml
 > EXPECTED OUTPUT: you should see ansible output in your cli with a response of PONG to your PING! 
 
 ### :rocket: __Step 3 - Set up your first playbook__
+
+> <strong>Playbooks</strong> are the instructions to be carried out by ansible. They contains plays which are in turns comprised of a set of tasks. Playbooks are written in YAML.
+{: .prompt-tip }
 
 Create the first playbook in your directory
 ```bash
@@ -156,6 +163,11 @@ This playbook:
 - Performs a get on the local address for the service
 - Prints out the results
 
+You can see in this playbook several important features:
+- <strong>hosts</strong>: defines the target of the playbook
+- <strong>tasks</strong>: sets the list of tasks for the play.
+- <strong>arguments</strong>: in each task you can see key: value pairs which are arguments for the task. These can be required or optional variables and alter the command. 
+
 ### :rocket: __Step 4 - Run your first playbook__
 
 2. Run the playbook you created
@@ -188,7 +200,10 @@ ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/myFirstP
 
 In this second playbook we are going to update the home page of the nginx deployment.
 
-This will involve copying over an updated index page and restarting the service. 
+This will involve copying over an updated index page, templating in a value and restarting the service. 
+
+> <strong>Templates</strong> are used in Ansible to enable dynamic configuration and inputting into documents. Ansible uses [Jinja2](https://jinja.palletsprojects.com/en/stable/templates/) for templating. 
+{: .prompt-tip }
 
 1. Create the playbook in your directory
 ```bash
@@ -237,7 +252,7 @@ nano ~/intro-to-ansible/mySecondPlaybook.yml
         var: output
 ```
 
-3. Create the new index page in your directory
+3\. Create the new index page in your directory
 > The page needs to be in the same directory as your playbook or you need to alter the referencing in the playbook. 
 {: .prompt-warning }
 
@@ -245,7 +260,7 @@ nano ~/intro-to-ansible/mySecondPlaybook.yml
 nano ~/intro-to-ansible/index.html.j2
 ```
 
-4. Populate the page with the below code, adding in your name:
+4\. Populate the page with the below code, adding in your name:
 - [Index Page Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-index-html-j2)
 
 ```html
@@ -272,7 +287,7 @@ nano ~/intro-to-ansible/index.html.j2
 {: file='html.j2 - jinja template'}
 
 
-5. Run the playbook 
+5\. Run the playbook 
 
 ```bash
 ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/mySecondPlaybook.yml 
@@ -282,9 +297,9 @@ ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/mySecond
 
 ### __Step 8 - Cleanup__
 
-- Go and delete any VMs you created for the lesson - see lesson [1.4 Remove Azure VMs](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e)
+- Go and delete any VMs you created for the lesson - see section 4 of [Preparing for Ansible]({% post_url /ansible-set-up/2025-06-07-prepare-ansible-part0 %})
 - If you have exposed any VMs on the public internet, then consider removing the connection if it is no longer required.
 
 ### Useful links
-- [Code Snippets Gist](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e)
+- [Tutorial - Code Snippets Gist](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e)
 
