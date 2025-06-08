@@ -8,7 +8,7 @@ tags: [Ansible, Automation]
 comments: true
 ---
 <!-- 
-{% include medium_xpost.md url="https://www.medium.com" %}
+{% include medium_xpost.md url="https://medium.com/@jackmcc08/ansible-part-1-introduction-to-ansible-407ed16ba276" %}
  -->
 
 ## <u>What is Ansible?</u>
@@ -19,6 +19,7 @@ It is open-source, easy to use and made by [RedHat](https://www.redhat.com/en).
 
 - [Official Ansible Documentation](https://docs.ansible.com/)
 
+If you have any questions, comments or issues with the tutorial please post a comment.
 
 ## <u>What's included in this tutorial?</u>
 
@@ -47,7 +48,7 @@ A basic Ansible playbook execution requires the following components:
 
 You can also run modules directly from the command line which can be useful for certain tasks.
 
-### :rocket: __Step 1 - Set up inventory__
+### :rocket: __Step 1 - Set up Inventory__
 
 > <strong>Inventories</strong> are used to define target machines. You can specify groups and names defined in inventories as targets in your playbooks.
 {: .prompt-tip }
@@ -66,6 +67,8 @@ Use this example inventory file, be sure to replace the sections with your infor
 - [Completed Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-inventory_example-yml)
 
 ```yaml
+---
+
 test_group:
   hosts:
     node1:
@@ -81,16 +84,16 @@ alternative_group:
 
 ```
 
-- This inventory file defines: 
-    - a single target host: `node1`
-    - the connection information to allow the control host to connect to the target host
-    - two groups `test_group` and `alternative_group`
+This inventory file defines: 
+  - a single target host: `node1`
+  - the connection information to allow the control host to connect to the target host
+  - two groups `test_group` and `alternative_group`
     
 > <strong>Groups</strong> allow you to easily target different sets of hosts for different purposes 
 {: .prompt-tip }
 
 
-### :rocket: __Step 2 - Test you can reach your your target hosts__
+### :rocket: __Step 2 - Test you can reach your target hosts__
 
 First we are going to test you can ping your target host. We are going to do this by directly calling the ping module.
 
@@ -170,7 +173,7 @@ You can see in this playbook several important features:
 
 ### :rocket: __Step 4 - Run your first playbook__
 
-2. Run the playbook you created
+1. Run the playbook you created
 
 ```bash
 ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/myFirstPlaybook.yml 
@@ -188,7 +191,7 @@ Go to your browser and enter the public ip of your machine - you should now see 
 
 Ansible aims to be an Idempotent tool which means that you can run it multiple times and it should not make any changes beyond the first application as long as the state has not changed.
 
-Run the first playbook again and you should see that the output has changed=0. This shows Ansible's idempotency.
+Run the first playbook again and you should see that the output has `changed=0`. This shows Ansible's idempotency.
 
 ```bash
 ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/myFirstPlaybook.yml 
