@@ -28,6 +28,7 @@ In this walk through you will be introduced to the basic concepts of Ansible and
 You will learn: 
 - How to ping your target host. 
 - How to write a basic inventory and playbook 
+- How to run a playbook from your control host which targets a single target host
 - How to install a service (nginx) on a target host
 - How to modify that service and restart it
 
