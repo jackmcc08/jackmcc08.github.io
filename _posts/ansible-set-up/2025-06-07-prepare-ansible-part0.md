@@ -34,12 +34,13 @@ You will learn:
 
 ## <u>Tutorial</u>
  
-There are four parts to this tutorial, sections 1-3 should be completed before using Ansible in following tutorials. Section 4 is for removing your target host once you are finished. 
+There are four parts to this tutorial, sections 1-3 should be completed before using Ansible in following tutorials. Section 4 is for removing your target host once you are finished. Section 5 is for creating multiple target hosts easily. 
 
 Sections: 
 - 0.1 [Configuring your control host]({% post_url /ansible-set-up/2025-06-07-configure-control-host %})
 - 0.2 [Create a target host - Azure VM]({% post_url /ansible-set-up/2025-06-07-create-target-host %})
 - 0.3 [Configure target host]({% post_url /ansible-set-up/2025-06-07-configure-target-host %})
 - 0.4 [Destroy target host - Azure VM]({% post_url /ansible-set-up/2025-06-07-destroy-target-host %})
+- 0.5 [Create multiple target hosts - Azure VMs]({% post_url /ansible-set-up/2025-06-21-create-multiple-hosts %})
 
 Now - go and complete sections 0.1 to 0.3 above and you should be ready for the [Introduction to Ansible tutorial part 1!]({% post_url /ansible-tutorials/2025-06-08-start-ansible-part1 %}) 

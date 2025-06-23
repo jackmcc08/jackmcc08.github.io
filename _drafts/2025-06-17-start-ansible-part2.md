@@ -16,24 +16,26 @@ In the last [tutorial]({% post_url /ansible-tutorials/2025-06-08-start-ansible-p
 
 In this tutorial we will take our knowledge to the next step and learn how to: 
 - Target multiple hosts 
-- Use Facts and Variables to obtain key information
-- Use the when conditional to target the correct host or group of hosts  
+- Use Ansible Facts to obtain key information
 - Use loops to run the same task multiple times
-- Use tags to skip tasks
+- Use the when conditional to target the correct host or group of hosts  
+- Use tags to run specific tasks or skip them.
 - Use filters to manipulate your data 
+- Use include_tasks and import_tasks to re-use Ansible tasks
 - Use Ansible Vault to protect your secrets
-- Using Python Virtual Environments to ...
+- Using Python Virtual Environments to define and protect your ansible-runtime setup
 - Run Ansible from an Azure DevOps Pipeline
 - Run Ansible from a container
 
 ## <u>Dependencies</u>
 - This tutorial assumes you have the following set up:
     - A Control Host (must be linux) 
-    - 2 to 3 Target Hosts (to follow this tutorial they must be linux)
+    - 2 Target Hosts (to follow this tutorial they must be linux servers)
     - The Public IP Address of each Target Host (or a private connection)
     - The SSH key to access each Target Host
 - You can follow the steps in this blog to help you get prepared. [Preparing for Ansible]({% post_url /ansible-set-up/2025-06-07-prepare-ansible-part0 %})
     - Follow section 0.5 to set up multiple target hosts
+    - if you have completed part 1 of the tutorial you will only need to set up additional target hosts with section 0.5
 
 ## <u>Tutorial</u>
 
