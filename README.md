@@ -15,3 +15,10 @@ It uses the Chirpy Jekyll Theme and is hosted by Github.
 bundle exec jekyll post '<insert-post-name>'
 
 ```
+
+## Start Dev Server
+
+```bash
+bundle exec jekyll server
+
+```
