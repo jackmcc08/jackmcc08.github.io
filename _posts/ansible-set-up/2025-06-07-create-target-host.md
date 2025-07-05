@@ -95,7 +95,7 @@ sed -i "s|PUBLIC_KEY_DATA|$PUBLIC_KEY|g" ~/create_vm_ansible/build_azure_vm.yml
 ```
 
 Copy in the below playbook
-- [Gist Code Snippet](https://gist.github.com/jackmcc08/be6b64b2608ac14ac2eb8c8a8c47e25f#file-create_azure_vm_ansible-yml)
+- [Code Snippet](https://github.com/jackmcc08/learn-ansible/blob/main/0_SetUp/2_build_azure_vm.yml)
 - Copy the public key value into the `PUBLIC_KEY_DATA` placeholder. I recommend using the sed command detailed above to help.
 
 {% raw %}

@@ -42,5 +42,6 @@ Sections:
 - 0.3 [Configure target host]({% post_url /ansible-set-up/2025-06-07-configure-target-host %})
 - 0.4 [Destroy target host - Azure VM]({% post_url /ansible-set-up/2025-06-07-destroy-target-host %})
 - 0.5 [Create multiple target hosts - Azure VMs]({% post_url /ansible-set-up/2025-06-21-create-multiple-hosts %})
+- 0.6 [Using Pyhon Virtual Environments](% post_url /ansible-set-up/2025-07-05-python-virtual-environments %)
 
 Now - go and complete sections 0.1 to 0.3 above and you should be ready for the [Introduction to Ansible tutorial part 1!]({% post_url /ansible-tutorials/2025-06-08-start-ansible-part1 %}) 

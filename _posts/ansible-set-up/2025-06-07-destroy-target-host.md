@@ -49,7 +49,7 @@ nano  ~/create_vm_ansible/delete_rg.yml
 ```
 
 Copy the below playbook and update the `name` variable on line 4
-- [Gist Code Snippet](https://gist.github.com/jackmcc08/be6b64b2608ac14ac2eb8c8a8c47e25f#file-destroy_azure_vm_ansible-yml)
+- [Code Snippet](https://github.com/jackmcc08/learn-ansible/blob/main/0_SetUp/4_delete_rg.yml)
 
 {% raw %}
 

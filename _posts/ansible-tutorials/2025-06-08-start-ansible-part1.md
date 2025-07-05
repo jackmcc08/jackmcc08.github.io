@@ -64,8 +64,8 @@ nano ~/intro-to-ansible/inventory.yml
 ```
 
 Use this example inventory file, be sure to replace the sections with your information. 
-- [Template File](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-inventory_template-yml)
-- [Completed Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-inventory_example-yml)
+- [Template File](https://github.com/jackmcc08/learn-ansible/blob/main/1_Intro_to_Ansible_Part1/inventory.yml)
+- [Completed Example](https://github.com/jackmcc08/learn-ansible/blob/main/1_Intro_to_Ansible_Part1/example_inventory.yml)
 
 ```yaml
 ---
@@ -127,7 +127,7 @@ Create the first playbook in your directory
 nano ~/intro-to-ansible/myFirstPlaybook.yml 
 ```
 Populate the playbook file with the below yaml.
-- [Playbook Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-myfirstplaybook-yml)
+- [Playbook Example](https://github.com/jackmcc08/learn-ansible/blob/main/1_Intro_to_Ansible_Part1/myFirstPlaybook.yml)
 
 ```yaml
 ---
@@ -215,7 +215,7 @@ nano ~/intro-to-ansible/mySecondPlaybook.yml
 ```
 
 2. Populate the playbook file with the below yaml.
-- [Playbook Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-mysecondplaybook-yml)
+- [Playbook Example](https://github.com/jackmcc08/learn-ansible/blob/main/1_Intro_to_Ansible_Part1/mySecondPlaybook.yml)
 
 ```yaml
 ---
@@ -265,7 +265,7 @@ nano ~/intro-to-ansible/index.html.j2
 ```
 
 4\. Populate the page with the below code, adding in your name:
-- [Index Page Example](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e#file-index-html-j2)
+- [Index Page Example](https://github.com/jackmcc08/learn-ansible/blob/main/1_Intro_to_Ansible_Part1/index.html.j2)
 
 ```html
 <!DOCTYPE html>
@@ -304,6 +304,6 @@ ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/mySecond
 - Go and delete any VMs you created for the lesson - see section 4 of [Preparing for Ansible]({% post_url /ansible-set-up/2025-06-07-prepare-ansible-part0 %})
 - If you have exposed any VMs on the public internet, then consider removing the connection if it is no longer required.
 
-### Useful links
-- [Tutorial - Code Snippets Gist](https://gist.github.com/jackmcc08/4bdeb93eb56cba38062806775c3f8e1e)
-
+### Next Steps
+- [Tutorial Part 2]({% post_url /ansible-tutorials/2025-07-05-start-ansible-part2 %})
+- [Part 1 - Code Snippets](https://github.com/jackmcc08/learn-ansible/tree/main/1_Intro_to_Ansible_Part1)
