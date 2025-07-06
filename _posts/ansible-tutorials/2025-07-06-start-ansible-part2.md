@@ -2,7 +2,7 @@
 layout: post
 title: Ansible Part 2 - Introduction to Ansible
 description: Start using Ansible, the easy IT Automation Tool by Redhat
-date: 2025-07-05 09:00 +0100
+date: 2025-07-06 09:00 +0100
 categories: [Ansible]
 tags: [Ansible, Automation]  
 comments: true
