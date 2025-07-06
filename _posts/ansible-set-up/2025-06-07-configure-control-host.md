@@ -28,7 +28,7 @@ This tutorial assumes you have:
 
 ## <u>Quick-Start</u>
 - Assuming you have a linux machine, you can run the script in this folder to set up python and ansible-core. 
-    - Quickstart Script: [Gist Code Snippet: bash script](https://gist.github.com/jackmcc08/be6b64b2608ac14ac2eb8c8a8c47e25f#file-install_ansible_control_host-sh)
+    - Quickstart Script: [ Code Snippet: bash script](https://github.com/jackmcc08/learn-ansible/blob/main/0_SetUp/1_setup_control_node_quickstart.sh)
 
 ## <u>Tutorial</u>
 

@@ -4,6 +4,8 @@ This blog is a personal blog covering Ansible, Linux and Software Development to
 
 It uses the Chirpy Jekyll Theme and is hosted by Github.  
 
+[Codex Blues](https://www.codexblues.com/)
+
 ## Create a new post
 
 - [Chirpy guide](https://chirpy.cotes.page/posts/write-a-new-post/)
@@ -22,3 +24,10 @@ bundle exec jekyll post '<insert-post-name>'
 bundle exec jekyll server
 
 ```
+
+
+## Future blogs in the works
+- Ansible with Azure Devops
+- Ansible in a container
+- Creating an autoinstall bootable ISO
+- Autogen blog 
