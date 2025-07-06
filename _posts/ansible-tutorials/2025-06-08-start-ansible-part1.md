@@ -304,6 +304,6 @@ ansible-playbook -i ~/intro-to-ansible/inventory.yml ~/intro-to-ansible/mySecond
 - Go and delete any VMs you created for the lesson - see section 4 of [Preparing for Ansible]({% post_url /ansible-set-up/2025-06-07-prepare-ansible-part0 %})
 - If you have exposed any VMs on the public internet, then consider removing the connection if it is no longer required.
 
-### Next Steps
+## Next Steps
 - [Tutorial Part 2]({% post_url /ansible-tutorials/2025-07-06-start-ansible-part2 %})
 - [Part 1 - Code Snippets](https://github.com/jackmcc08/learn-ansible/tree/main/1_Intro_to_Ansible_Part1)

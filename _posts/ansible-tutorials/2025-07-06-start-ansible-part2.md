@@ -7,8 +7,8 @@ categories: [Ansible]
 tags: [Ansible, Automation]  
 comments: true
 ---
-<!-- 
-{% include medium_xpost.md url="https://medium.com/@jackmcc08/ansible-part-1-introduction-to-ansible-407ed16ba276" %} -->
+
+{% include medium_xpost.md url="https://medium.com/@jackmcc08/ansible-part-2-introduction-to-ansible-e957bc63f8c0" %} 
 
 > [Tutorial Part 1!]({% post_url /ansible-tutorials/2025-06-08-start-ansible-part1 %})
 {: .prompt-tip}
@@ -530,5 +530,6 @@ ansible-playbook -i ~/intro-to-ansible-part2/inventory.yml ~/intro-to-ansible-pa
 > EXPECTED OUTPUT: The tasks should now run without failure and you should see your secret_var get printed! You didn't even need to enter the password!
 
 
-### Useful Links
+## Next Steps
+- Next tutorial coming soon!
 - [Part 2 - Code Snippets](https://github.com/jackmcc08/learn-ansible/tree/main/2_Intro_to_Ansible_part2){:target="_blank"}
