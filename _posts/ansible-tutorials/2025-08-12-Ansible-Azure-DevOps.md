@@ -8,7 +8,7 @@ tags: [Ansible, Automation, Azure, Pipelines, DevOps]
 comments: true
 ---
 
-<!-- {% include medium_xpost.md url="https://medium.com/@jackmcc08/ansible-part-2-introduction-to-ansible-e957bc63f8c0" %}  -->
+{% include medium_xpost.md url="https://medium.com/@jackmcc08/run-ansible-from-an-azure-devops-pipeline-1c8b6f754de1" %}
 
 ## <u>What's included in this tutorial?</u>
 
@@ -41,10 +41,13 @@ Key topics:
 
 For this tutorial we are going to:
 1. Create a Service Principal
-2. Add the Service Principal as a user in the DevOps Organization
+2. Set the Service Principle up in DevOps with the correct permissions
 3. Create your self-hosted DevOps Agent
-4. Create a repo
-TODO - finish off
+4. Create a repo in DevOps
+5. Create your Ansible Playbook and Inventory
+6. Store your SSH key in Azure Key Vault
+7. Create your pipeline
+8. Run the pipeline and see Ansible work in DevOps!
 
 ### :rocket: __Step 1 - Create a Service Principal__
 
@@ -450,13 +453,13 @@ steps:
 3. Commit and push your code up to your DevOps project. (For this demo if you are just using main it is not an issue, but otherwise remember to follow good branching and pull request strategies)
 
 
-### :rocket: __Step 8 - Create and Run your pipeline in Azure DevOps__
+### :rocket: __Step 9 - Create and Run your pipeline in Azure DevOps__
 
 1. Go to your DevOps Project
 
 2. Click on Pipelines
 
-3. Click on CreatePipeline
+3. Click on Create Pipeline
 
 4. Select Azure Repos Git
 
@@ -483,7 +486,7 @@ steps:
 15. Once its complete, you should now be able to enter the Public ip address of the VM and get the Nginx homepage!
     - This is over port 80 as there is no TLS certificate.
 
-### :rocket: __Step 9 - Clean up your resources__
+### :rocket: __Step 10 - Clean up your resources__
 
 - Go and delete any VMs you created for the lesson - see section 4 of [Preparing for Ansible]({% post_url /ansible-set-up/2025-06-07-prepare-ansible-part0 %})
 - If you have exposed any VMs on the public internet, then consider removing the connection if it is no longer required.
