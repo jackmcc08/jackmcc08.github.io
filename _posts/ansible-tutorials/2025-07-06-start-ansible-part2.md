@@ -531,5 +531,5 @@ ansible-playbook -i ~/intro-to-ansible-part2/inventory.yml ~/intro-to-ansible-pa
 
 
 ## Next Steps
-- Next tutorial coming soon!
 - [Part 2 - Code Snippets](https://github.com/jackmcc08/learn-ansible/tree/main/2_Intro_to_Ansible_part2){:target="_blank"}
+- [Running Ansible in an Azure DevOps Pipeline Tutorial]({% post_url /ansible-tutorials/2025-08-12-Ansible-Azure-DevOps %})
