@@ -23,6 +23,8 @@ bundle exec jekyll post '<insert-post-name>'
 ```bash
 bundle exec jekyll server
 
+bundle exec jekyll server --drafts
+
 ```
 
 
