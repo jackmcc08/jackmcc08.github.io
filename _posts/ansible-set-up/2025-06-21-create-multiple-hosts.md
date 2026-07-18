@@ -101,7 +101,7 @@ nano  ~/create_vms_ansible/build_multiple_azure_vms.yml
 # copy in the public key created in step 1 - should be saved in id_rsa.pub file in .ssh
 # you can also use a SED command
 PUBLIC_KEY=$(cat ~/.ssh/id_rsa.pub)
-sed -i "s|PUBLIC_KEY_DATA|$PUBLIC_KEY|g" ~/create_vms_ansible/build_azure_vms.yml
+sed -i "s|PUBLIC_KEY_DATA|$PUBLIC_KEY|g" ~/create_vms_ansible/build_multiple_azure_vms.yml
 ```
 
 Copy in the below playbook
