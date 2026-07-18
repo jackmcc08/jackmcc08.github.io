@@ -54,3 +54,10 @@ ansible-builder --version
 
 ansible-navigator run test_localhost.yml --execution-environment-image postgresql_ee --mode stdout --pull-policy missing --container-options='--user=0'
 ```
+
+
+You can run devops pipelines from Ansible Containers 
+https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs?tabs=bash&pivots=container-apps-jobs-self-hosted-ci-cd-azure-pipelines#create-a-self-hosted-agent-as-an-event-driven-job
+
+
+Trigger another container job - https://learn.microsoft.com/en-us/azure/container-apps/jobs?tabs=azure-cli#start-a-job-execution-on-demand

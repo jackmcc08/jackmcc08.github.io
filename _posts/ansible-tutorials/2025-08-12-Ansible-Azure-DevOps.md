@@ -306,8 +306,8 @@ test_group:
 
 1. Create a keyvault if you don't have one.
     - [Microsoft Guide](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal){:target="_blank"}
-    - name: myKeyVault-<insert-name>
-    - location: <insert-location>
+    - name: `myKeyVault-<insert-name>`
+    - location: `<insert-location>`
     - permission model: azure role based access
     - networks: All networks (for simplicity)
 
@@ -499,3 +499,4 @@ steps:
 ## Next Steps
 - [Code Snippets](https://github.com/jackmcc08/learn-ansible/tree/main/3_Ansible_Devops_Pipelines){:target="_blank"}
 - Next tutorial coming soon...
+
