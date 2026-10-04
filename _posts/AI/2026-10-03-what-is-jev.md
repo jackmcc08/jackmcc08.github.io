@@ -3,8 +3,8 @@ layout: post
 title: Jev and TypeSafe
 description: A little research into Jev. 
 date: 2026-10-03 09:00 +0100
-categories: [Projects]
-tags: [AI, TypeSafe, Jev, Automation, LLM]
+categories: [AI]
+tags: [AI, TypeSafe, Jev, Automation, LLM, Quick-Read]
 comments: true
 ---
 
